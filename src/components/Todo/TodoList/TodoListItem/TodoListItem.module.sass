@@ -1,0 +1,36 @@
+%button
+  padding: 0.625rem
+  font-size: inherit
+  border: none
+  border-radius: 0.3125rem
+  color: #FFFFFF
+  cursor: pointer
+  svg
+    vertical-align: middle
+  
+.taskCard
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin: 0.625rem 0
+  padding: 0.625rem 0.9375rem
+  border: 1px solid #000000
+  border-radius: 0.3125rem
+  background-color: #c5e1e5
+
+.deleteBtn
+  @extend %button
+  margin-left: 1rem
+  background-color: #1c1c9f
+
+.checkBtn
+  @extend %button
+  background-color: #02c502
+  
+.crossBtn
+  @extend %button
+  background-color: #FF0000
+
+.isChecked
+  background-color: #02c502
+
