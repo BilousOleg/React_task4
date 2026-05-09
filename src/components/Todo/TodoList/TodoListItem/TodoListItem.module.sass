@@ -1,0 +1,46 @@
+@use './../../../../_colors' as c
+
+$card-gap: 1rem
+  
+%button
+  padding: 0.625rem
+  font-size: inherit
+  border: none
+  border-radius: 0.3125rem
+  color: c.$additional-color-light
+  cursor: pointer
+  svg
+    vertical-align: middle
+  
+.taskCard
+  display: flex
+  justify-content: space-between
+  align-items: center
+  gap: $card-gap
+  margin: 0.625rem 0
+  padding: 0.625rem 0.9375rem
+  border: 1px solid c.$additional-color-dark
+  border-radius: 0.3125rem
+  background-color: c.$additional-color-default
+  p
+    overflow-wrap: anywhere
+  div
+    flex-shrink: 0
+
+.deleteBtn
+  @extend %button
+  margin-left: $card-gap
+  background-color: c.$main-color-dark
+
+.checkBtn
+  @extend %button
+  background-color: c.$checked-color
+  
+.crossBtn
+  @extend %button
+  background-color: c.$unchecked-color
+
+.isChecked
+  text-decoration: line-through
+  background-color: c.$checked-color
+

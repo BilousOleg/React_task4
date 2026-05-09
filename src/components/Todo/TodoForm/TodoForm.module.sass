@@ -1,0 +1,35 @@
+@use './../../../_colors' as c
+  
+.todoForm
+  position: relative
+  display: flex
+  justify-content: space-between
+  align-items: center
+  gap: 1.5625rem
+  .formInput
+    width: 100%
+    padding: 0.75rem
+    font: inherit
+    outline: none
+    border: 2px solid c.$additional-color-dark
+    border-radius: 0.3125rem
+    &:focus
+      border-color: c.$main-color-default
+  .invalidInput
+    border-color: c.$invalid-color
+    &:focus
+      border-color: c.$invalid-color
+  .submitBtn
+    padding: 0.6875rem 1.5625rem
+    font: inherit
+    border: none
+    border-radius: 0.3125rem
+    color: c.$additional-color-light
+    background-color: c.$main-color-default
+    cursor: pointer
+  .invalidMsg
+    position: absolute
+    bottom: 0
+    color: c.$invalid-color
+    transform: translateY(125%)
+    
