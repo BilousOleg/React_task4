@@ -5,7 +5,9 @@ import { TodoContext } from '../../../contexts';
 import CONSTANTS from '../../../constants';
 import styles from './TodoForm.module.sass';
 
-const [MAX_LENGTH, MIN_LENGTH, INITIAL_VALUE] = CONSTANTS;
+const {
+  FORM: { MAX_LENGTH, MIN_LENGTH, INITIAL_VALUE },
+} = CONSTANTS;
 
 const TASK_SCHEMA = yup.object({
   task: yup
